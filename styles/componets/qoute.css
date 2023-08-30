@@ -1,0 +1,164 @@
+.container{
+   margin: 0;
+   padding: 0;
+   background-color: var(--clr-white);
+   width: 90%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   border-radius: 10px;
+   box-shadow: 0 10px 20px 0px rgba(115, 77, 63, 1);
+   
+}
+
+.Quote__wrapper{
+    margin: 0;
+    padding: 2rem 2rem;
+    width: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.Quote{
+    text-align: center;
+}
+
+#Quote{
+    font-size:calc(5vw- 10px);
+    font-style: italic;
+    padding-top: 0;
+    padding-bottom: 1px;
+}
+
+.Quote>h2{
+    font-size: var(--size-2xl);
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.Quote>h2::after{
+    content: '';
+    width: 5rem;
+    height: 3px;
+    position: absolute;
+    background-color: var(--clr-lightbrown);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+}
+
+.Quote>blockquote{
+    min-height: var(--size-4xl);
+    padding: 2rem;
+}
+
+.Quote>blockquote::before, .Quote>blockquote::after{
+    content: '"';
+}
+
+.Quote>span{
+    display:flex;
+    align-self: self-end;
+    position: relative;
+    padding-right: 20px;
+    
+}
+.Quote>span::before{
+    content: '';
+    width: 10px;
+    height: 2px;
+    background:black;
+    position: absolute;
+    top: 50%;
+    left: -15px;
+}
+
+.button__wrapper{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+button{
+    background-color: var(--clr-brown);
+    color: black;
+    border-radius: 10px;
+    border-radius: 25px;
+    width: 125px;
+    height: 50px;
+    margin: 0px;
+    cursor: pointer;
+    
+}
+
+/* xs */
+@media(min-width: 475px) {
+   h2{
+    font-size: 2px;
+   }
+    
+}
+
+/* sm */
+@media(min-width: 640px) {
+    @media(min-width: 768px) {
+    .Quote__wrapper{
+        margin: 0;
+        padding: 4rem 5rem;
+        width: auto;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+}
+}
+
+/* md */
+@media(min-width: 768px) {
+    .Quote__wrapper{
+        margin: 0;
+        padding: 4rem 10rem;
+        width: auto;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .Quote>h2{
+        font-size: var(--size-4xl);
+        margin-bottom: 2rem;
+        position: relative;
+    }
+}
+
+/* lg */
+@media(min-width: 1024px) {
+    .Quote__wrapper{
+        margin: 0;
+        padding: 4rem 15rem;
+        width: auto;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+     
+}
+
+/* xl */
+/* @media(min-width: 1280px) {
+} */
+
+/* 2xl */
+/* @media(min-width: 1536px) {
+    
+} */
